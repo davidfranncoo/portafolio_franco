@@ -1,0 +1,202 @@
+* {
+    /* margin: espacio afuera del borde */
+    margin: 0;
+    /* espacio entre el borde y el contenido interior */
+    padding: 0;
+    /*  permite especificar el tamaño total del elemento
+     de manera más intuitiva y fácil de entender */
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5vw;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1;
+    grid-auto-rows: 100% 100% 100% 100% 40% 5%;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+/* --------------------------------- MENU ------------------------ */
+
+
+
+.NavBran1 {
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+    justify-content: space-between;
+}
+
+.brand {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    padding: 1vw;
+}
+
+.open_close {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* ----------------------- MENU RESPOSIVE------------------------------- */
+
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        background-color: aliceblue;
+        flex-direction: column;
+        height: 100vh;
+        transform: translateX(-110%);
+        transition: all .30s ease-in-out;
+        padding: 50px;
+    }
+
+    li {
+        padding: 50px;
+    }
+
+    .menu_close {
+        display: none;
+    }
+
+    .view-menu {
+        transform: translateX(0%);
+        transition: all .30s ease-in-out;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .open_close {
+        display: none;
+
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+/* ------------------  PORTAFOLIO ------------------*/
+
+.portafolio_name {
+ position: absolute;
+ left: 0;
+ 
+}
+
+.portafolio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around
+}
+
+.portafolio img {
+    width: 7vw;
+
+}
+
+#card_animado1,
+#card_animado2,
+#card_animado3 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+/* CARD */
+
+.card{
+    width: 30vw;
+    height: 30vh;
+    background-color: rgb(140, 87, 87);
+    color: white;
+    opacity: 10;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+    border: 1px solid #000;
+}
+
+.card.show{
+    animation: fadeInUp 3s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 481px){
+    .portafolio{
+        display: flex;
+        flex-direction: column
+    }
+    .card{
+        width: 30vw;
+        height: 20vh;
+    }
+}
+
+
+/* ----------------------- ABOUTME --------------------- */
+
+
+.aboutme {
+
+    background-color: rgb(156, 196, 234);
+
+}
+
+.portafolio {
+    background-color: rgb(240, 184, 184);
+
+}
+
+.contacto {
+    background-color: rgb(176, 176, 176);
+
+}
+
+.informacion {
+    background-color: rgb(161, 120, 242);
+
+}
+
+.six {
+    background-color: rgb(140, 232, 117);
+
+}
+
+
+/* ---------------- SCROLL DESPLAZAMINTO ------ */
+
+
