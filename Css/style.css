@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+/* font-family: 'Inter', sans-serif; */
 * {
     /* margin: espacio afuera del borde */
     margin: 0;
@@ -6,8 +8,7 @@
     /*  permite especificar el tamaño total del elemento
      de manera más intuitiva y fácil de entender */
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.5vw;
+ 
 }
 
 .wrapper {
@@ -18,23 +19,35 @@
     height: 100vh;
 }
 
-
+body{
+   
+   font-family: 'Inter', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+}
 
 /* --------------------------------- MENU ------------------------ */
 
 
 
 .NavBran1 {
+    background-image: url("/Img/fondo-gris-formas-geometricas_23-2148811539.avif");
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con opacidad (0.5 = 50% de opacidad) */
+    background-blend-mode: overlay;
     display: flex;
     align-items: center;
-    background-color: aquamarine;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-size: cover ;
+    
 }
 
-.brand {
-    z-index: 1;
+.brand{
     position: absolute;
+    left: 0;
     top: 0;
+    padding: 3vw;
+    z-index: 1;
+    
 
 }
 
@@ -44,10 +57,23 @@ ul {
     list-style: none;
 
 }
+.menu{
+    padding: 3vw;
+
+}
 
 a {
     text-decoration: none;
-    padding: 1vw;
+    padding: 0.8vw;
+    color: white;
+    margin: 1.2vw;;
+
+}
+a:hover{
+    background-color: #8DCBF2;
+    color:black;
+    border-radius: 5px;
+    
 }
 
 .open_close {
@@ -56,41 +82,123 @@ a {
     top: 0;
 }
 
+.box_menu{
+    display: flex;
+    font-size: 60px;
+}
+.box_menu h1{
+font-size: 50px;
+}
+.box_description{
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size: x-large;
+}
+.box_description h1{
+    color: #F24464 ;
+}
+.div_buttom{
+    display: flex;
+    justify-content: center;
+}
+.box_buttom{
+    
+    width: 8em;
+    height: 3em;
+    color:white;
+    background-color: #F24464;
+    border: 2.5px solid #8DCBF2;
+    border-radius: 5px ;
+    margin-top: 2em;
+   
+}
+.box_buttom:hover{
+    background-color: #8DCBF2;
+    color:rgb(108, 2, 2);
+}
+
+.box_icon{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    
+}
+
+.box_img{
+    width: 4.5em;
+    height: 6em;
+    border: 5px solid rgb(141, 203, 242);
+    border-radius: 3%;
+    background-color:#b9b9b9;
+   
+    margin-left:50px;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
+}
+.box_img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    
+    
+}
 /* ----------------------- MENU RESPOSIVE------------------------------- */
 
 @media (max-width: 768px) {
+  
     .menu {
-        position: absolute;
+        position: fixed;
         display: flex;
         justify-content: center;
-        background-color: aliceblue;
         flex-direction: column;
         height: 100vh;
-        transform: translateX(-110%);
+        transform: translateX(-180%);
         transition: all .30s ease-in-out;
-        padding: 50px;
+        padding-left: 60px;
+        font-size: medium;
+        background-color: rgba(64, 132, 175, 0.8);
     }
 
     li {
-        padding: 50px;
+        padding-bottom: 50px;
+       
     }
 
     .menu_close {
         display: none;
     }
-
-    .view-menu {
-        transform: translateX(0%);
-        transition: all .30s ease-in-out;
+    .fa-bars, .fa-xmark{
+        font-size: 20px;
+        margin: 5px;
+        color:white;
     }
 
+    .view-menu {
+        transform: translateX(-80%);
+        transition: all .30s ease-in-out;
+    }
+    /* .box_description{
+        display: none;
+    } */
+    .box_img{
+        margin-left: 0px;
+        width: 3.5em;
+        height: 5em;
+    }
+    .box_menu{
+        display: flex;
+        flex-direction: column-reverse;
+    align-items: center;
+       
+    }
+    .box_description h2{
+        display: none;
+    }
 
 }
 
 @media (min-width: 768px) {
     .open_close {
         display: none;
-
     }
 
     .menu {
@@ -98,6 +206,7 @@ a {
         top: 0;
         right: 0;
     }
+
 }
 
 /* ------------------  PORTAFOLIO ------------------*/
