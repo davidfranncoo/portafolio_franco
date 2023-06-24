@@ -190,6 +190,9 @@ font-size: 50px;
     align-items: center;
        
     }
+    .box_description{
+        margin-right: 0px;
+    }
     .box_description h2{
         display: none;
     }
