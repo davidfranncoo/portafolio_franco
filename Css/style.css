@@ -203,14 +203,44 @@ font-size: 50px;
     .open_close {
         display: none;
     }
-
+    
     .menu {
         position: absolute;
         top: 0;
         right: 0;
     }
+    
+}
+
+
+/* ------------------  SOBRE MI----------------------------- */
+
+.aboutme {
+
+    
+    background: linear-gradient(45deg, black, rgb(64,64,64), black);
 
 }
+.aboutme h1{
+    display:flex;
+    justify-content: center;
+}
+.aboutme img{
+    width: 200px;
+    height: auto;
+
+}
+.aboutme_div1, .aboutme_div2{
+    display: flex;
+    align-items: center;
+    margin: 5%;
+}
+
+
+
+
+
+
 
 /* ------------------  PORTAFOLIO ------------------*/
 
@@ -279,14 +309,9 @@ font-size: 50px;
 }
 
 
-/* ----------------------- ABOUTME --------------------- */
 
 
-.aboutme {
 
-    background-color: rgb(156, 196, 234);
-
-}
 
 .portafolio {
     background-color: rgb(240, 184, 184);
