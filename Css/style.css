@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 /* font-family: 'Inter', sans-serif; */
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
 * {
     /* margin: espacio afuera del borde */
     margin: 0;
@@ -94,8 +96,9 @@ font-size: 50px;
     margin-right: 50px;
     font-size: x-large;
 }
-.box_description h1{
+.box_description h1, .aboutme_h1{
     color: #F24464 ;
+    font-family: 'Open Sans', sans-serif;
 }
 .div_buttom{
     display: flex;
@@ -224,6 +227,18 @@ font-size: 50px;
 .aboutme h1{
     display:flex;
     justify-content: center;
+   
+}
+.aboutme_div1 div{
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+
+}
+.aboutme_div1 div h1{
+    color: #F24464 ;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 5%;
 }
 .aboutme img{
     width: 200px;
