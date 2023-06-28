@@ -16,7 +16,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: 1;
-    grid-auto-rows: 100% 100% 100% 100% 40% 5%;
+    grid-auto-rows: 100% 100% 100% 100% 100% 5%;
     width: 100vw;
     height: 100vh;
 }
@@ -254,9 +254,6 @@ font-size: 50px;
 
 
 
-
-
-
 /* ------------------  PORTAFOLIO ------------------*/
 
 .portafolio_name {
@@ -338,10 +335,89 @@ font-size: 50px;
 
 }
 
-.informacion {
-    background-color: rgb(161, 120, 242);
 
-}
+
+
+/* ---------------informacion------------------ */
+.informacion {
+    background: linear-gradient(45deg, black, rgb(64,64,64), black);
+
+   
+  }
+  .info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+   .info2, .info3  {
+    display:flex;
+    justify-content: center;
+   
+    flex-basis: 58%;
+    box-sizing: border-box;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .info1,  .info4  {
+    display: flex;
+   
+    flex-basis: 40%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .info1 img{
+    display: flex;
+    width: 22em;
+    height: 22em;
+  }
+  .info4 img{
+    display: flex;
+    width: 22em;
+    height: 17em;
+  }
+
+  .info2 h1, .info3 h1{
+
+    color:#F24464;
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+  
+  @media (max-width: 780px) {
+    .info {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  
+    .info1 {
+      flex-basis: 100%;
+    }
+    .info1 img, .info4 img{
+        display: flex;
+        width: 22em;
+        height: 22em;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .six {
     background-color: rgb(140, 232, 117);
@@ -352,3 +428,54 @@ font-size: 50px;
 /* ---------------- SCROLL DESPLAZAMINTO ------ */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* "2X2"
+.info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .info1 {
+    background-color: #F24464;
+    flex-basis: calc(50% - 10px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  @media (max-width: 780px) {
+    .info {
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+  
+    .info1 {
+      flex-basis: 100%;
+    }
+  } */
