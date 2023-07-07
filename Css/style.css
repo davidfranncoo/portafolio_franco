@@ -53,10 +53,11 @@ body{
 }
 
 .brand{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
-    padding: 3vw;
+    padding: 0.5em;
+    margin-left: 0.5em;
     z-index: 1;
     
 
@@ -69,10 +70,14 @@ ul {
 
 }
 .menu{
-    position: absolute;
-    padding: 3vw;
+    background-color: #8dcbf256;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    padding: 1em;
     top:0;
     right:0;
+    width: 100%;
     
 
 }
@@ -98,6 +103,7 @@ a:hover{
 }
 
 .box_menu{
+    
     display: flex;
     font-size: 3.75rem;
 }
