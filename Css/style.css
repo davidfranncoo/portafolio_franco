@@ -197,6 +197,22 @@ font-size: 3rem;
     
     
 }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+   body{
+    font-size: 12px;
+   }
+   .box_description{
+    font-size: 1.2rem;
+   }
+   .box_img{
+    font-size: 3rem;
+
+   }
+   /* ------------------------Proyecto------------- */
+ 
+
+  }
+  
 
 /* ------------------  SOBRE MI----------------------------- */
 .informacion {
@@ -255,7 +271,7 @@ ANIMACION           */
   }
   .info4 img{
     object-fit:contain;
-    width: 27rem;
+    width: 27em;
     height: 90%;
 
   }
@@ -375,7 +391,7 @@ border-radius: 10px;
 }
 .proyecto_card img{
     padding: 1.5rem 1.5rem 0 1.5rem ;
-    width: 20rem;
+    width: 20em;
     
 }
 .proyecto_card{
@@ -383,7 +399,7 @@ border-radius: 10px;
     border-radius: 1rem;
     background: linear-gradient(to bottom, rgba(110, 33, 47, 0.801), rgba(242, 68, 100, 0.862));
     width: 20em;
-    height: 30rem;
+    height: 30em;
 }
 .container_div{
     display: flex;
@@ -581,6 +597,28 @@ form{
       }
 
 } */
+@media only screen and (min-width: 400px) and (max-width: 768px) {
+    body{
+     font-size: 8px;
+    }
+    .box_description{
+        display: none;
+    }
+    /* .info1 img{
+        display: none;
+      
+    }
+    .info4 img{
+        display: none;
+      
+    } */
+}
+
+
+
+
+
+
 
 
 .six {
