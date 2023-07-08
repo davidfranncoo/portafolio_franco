@@ -82,14 +82,14 @@ ul {
 
 }
 
-a {
+.a {
     text-decoration: none;
     padding: 0.8vw;
     color: white;
     margin: 1.2vw;;
    
 }
-a:hover{
+.a:hover{
     background-color: #8DCBF2;
     color:black;
     border-radius: 5px;
@@ -137,7 +137,7 @@ font-size: 3rem;
     width: 6em;
     height: 2.5em;
     color:white;
-    background-color: #F24464;
+    background-color: #F24464;;
     border: 2.5px solid #8DCBF2;
     border-radius: 5px ;
     margin: 1rem;
@@ -158,10 +158,12 @@ font-size: 3rem;
     display: flex;
     justify-content: center;
     font-size: 1.5em;
+    
     width: 70%;
     
 }
 .box_icon i{
+    color: white;
     padding: 1rem;
     transition: background-color 0.3s ease;
     transition: transform 0.3s ease;
@@ -199,7 +201,8 @@ font-size: 3rem;
 /* ------------------  SOBRE MI----------------------------- */
 .informacion {
     /* background: linear-gradient(45deg, black, rgb(64,64,64), black); */
-    background-color: rgb(31,31,31);
+    background: linear-gradient(to bottom, rgb(21, 21, 21), rgb(67, 66, 66));
+
     display: flex;
    
 
@@ -285,9 +288,13 @@ ANIMACION           */
    
 }
 .text_inicio{
+    
     font-family: 'Poppins', sans-serif;
     color: #F24464 ;
     margin-left:1rem;
+    position: absolute;
+    padding: 10px;
+   
 }
 /* .herramientas h1{
     display: flex;
@@ -358,7 +365,7 @@ border-radius: 10px;
     width: 100%;
     
     background: linear-gradient(to bottom, rgb(31,31,31), rgb(87, 87, 87));
-
+   
 }
 .proyecto_container{
    
@@ -437,6 +444,13 @@ border-radius: 10px;
     align-items: flex-start;
     margin-left: 8%; 
     padding:  10rem  0;
+}
+.text_inicio2{
+    
+    font-family: 'Poppins', sans-serif;
+    color: #F24464 ;
+    margin-left:1rem;
+ 
 }
 .fondo_contac{
     margin-top: 10%;
