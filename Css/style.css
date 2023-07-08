@@ -327,7 +327,7 @@ ANIMACION           */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 1em;
   
     transition: background-color 0.3s ease;
     transition: transform 0.3s ease;
@@ -355,11 +355,11 @@ border-radius: 10px;
   
 } */
 .kit{
-    padding: 6rem;
+    padding: 15em 5em;
 }
 .kit_container{
     display: grid;
-    padding: 6rem;
+    padding: 6em;
     grid-template-columns: repeat(
         auto-fit,
         minmax(
@@ -387,7 +387,7 @@ border-radius: 10px;
    
     display: flex;
     justify-content: space-around;
-    padding:  10rem 0;
+    padding:  20em 0;
 }
 .proyecto_card img{
     padding: 1.5rem 1.5rem 0 1.5rem ;
@@ -597,9 +597,9 @@ form{
       }
 
 } */
-@media only screen and (min-width: 400px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     body{
-     font-size: 8px;
+     font-size: 9px;
     }
     .box_description{
         display: none;
@@ -612,6 +612,14 @@ form{
         display: none;
       
     } */
+
+    .img{
+        display: none;
+    }
+    
+    .contacto_form{
+       width: 100%;
+    }
 }
 
 
