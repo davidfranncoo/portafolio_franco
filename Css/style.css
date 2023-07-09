@@ -69,6 +69,10 @@ ul {
     list-style: none;
 
 }
+/* .inicio_icon{
+    display: none;
+} */
+
 .menu{
     background-color: #8dcbf256;
     display: flex;
@@ -97,11 +101,7 @@ ul {
     
 }
 
-.open_close {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
+
 
 .box_menu{
     
@@ -208,6 +208,7 @@ font-size: 3rem;
     font-size: 3rem;
 
    }
+  
    /* ------------------------Proyecto------------- */
  
 
@@ -217,7 +218,7 @@ font-size: 3rem;
 /* ------------------  SOBRE MI----------------------------- */
 .informacion {
     /* background: linear-gradient(45deg, black, rgb(64,64,64), black); */
-    background: linear-gradient(to bottom, rgb(21, 21, 21), rgb(67, 66, 66));
+    background: linear-gradient(to bottom, rgb(21, 21, 21), rgb(49, 49, 49));
 
     display: flex;
    
@@ -300,7 +301,7 @@ ANIMACION           */
 
 .herramientas{
     width: 100%;
-    background: linear-gradient(to bottom, rgb(31,31,31), rgb(87, 87, 87));
+    background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(82, 82, 82));
    
 }
 .text_inicio{
@@ -380,7 +381,7 @@ border-radius: 10px;
 .proyecto{
     width: 100%;
     
-    background: linear-gradient(to bottom, rgb(31,31,31), rgb(87, 87, 87));
+    background: linear-gradient(to bottom,rgb(82, 82, 82), rgb(31,31,31));
    
 }
 .proyecto_container{
@@ -391,15 +392,15 @@ border-radius: 10px;
 }
 .proyecto_card img{
     padding: 1.5rem 1.5rem 0 1.5rem ;
-    width: 20em;
+    width: 25em;
     
 }
 .proyecto_card{
     box-shadow: 10px 10px 20px rgb(0, 0, 0);
     border-radius: 1rem;
     background: linear-gradient(to bottom, rgba(110, 33, 47, 0.801), rgba(242, 68, 100, 0.862));
-    width: 20em;
-    height: 30em;
+    width: 25em;
+    height: 37em;
 }
 .container_div{
     display: flex;
@@ -418,13 +419,17 @@ border-radius: 10px;
 }
 
 .card_buttom{
-    width: 6em;
-    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7em;
+    height: 3em;
     color: white;
     background-color: #470a15;
     border: 2.5px solid #8DCBF2;
     border-radius: 5px;
     font-size: 1em;
+    font-family: 'Poppins', sans-serif;
     transition: background-color 0.3s ease;
     transition: transform 0.3s ease;
 }
@@ -597,21 +602,19 @@ form{
       }
 
 } */
+/* <!-- <div class="inicio_icon">
+<i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-x"></i>
+</div> --> */
+
+
 @media only screen and (max-width: 768px) {
     body{
-     font-size: 9px;
+     font-size: 8px;
     }
     .box_description{
         display: none;
     }
-    /* .info1 img{
-        display: none;
-      
-    }
-    .info4 img{
-        display: none;
-      
-    } */
 
     .img{
         display: none;
@@ -620,6 +623,49 @@ form{
     .contacto_form{
        width: 100%;
     }
+    .inicio_icon{
+        display: block;
+        position: fixed;
+        top:0;
+        right: 0;
+        padding: 0.5em;
+        font-size: 3.5em;
+    }
+ 
+    #close{
+        display: none;
+    }
+    .menu{
+        background-color: #8dcbf272;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 40%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 2.5em;
+        transform: translateX(-110%);
+        transition: all .5s ease-in-out;
+        
+    }
+    .show_menu{
+        transform: translateX(0%);
+        transition: all .5s ease-in-out;
+    }
+   
+
+ 
+/* 
+.proyecto_card {
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    border-radius: 1rem;
+    background: linear-gradient(to bottom, rgba(110, 33, 47, 0.801), rgba(242, 68, 100, 0.862));
+    width: 20em;
+    height: 30em;
+} */
+
 }
 
 
