@@ -325,7 +325,7 @@ ANIMACION           */
     }
     
     .contenedor1:hover .box_tex {
-        height: 200px;
+        height: 16em;
      
     }
     .contenedor1:hover .puntitos{
@@ -754,6 +754,13 @@ form{
     .show_menu{
         transform: translateX(0%);
         transition: all .5s ease-in-out;
+    }
+    .contenedor1{
+        font-size: 1.3em;
+    }
+    .contenedor1:hover .box_tex {
+        height: 10rem;
+     
     }
   
 
