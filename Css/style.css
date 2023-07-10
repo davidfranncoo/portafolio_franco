@@ -100,8 +100,12 @@ ul {
     transform: scale(1.1);
     
 }
+@media screen and (min-width: 769px){
 
-
+    .inicio_icon{
+    display: none;
+    }
+} 
 
 .box_menu{
     
@@ -306,12 +310,16 @@ ANIMACION           */
 }
 .text_inicio{
     
+    width: 100%;
+    display: flex;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
-    color: #F24464 ;
-    margin-left:1rem;
+    color: #F24464;
+    margin-left: 1rem;
+    margin-top: 0.4rem;
     position: absolute;
-    padding: 10px;
-   
+    /* padding: 10px; */
+    justify-content: center;
 }
 /* .herramientas h1{
     display: flex;
@@ -388,7 +396,7 @@ border-radius: 10px;
    
     display: flex;
     justify-content: space-around;
-    padding:  20em 0;
+    padding:  15em 0;
 }
 .proyecto_card img{
     padding: 1.5rem 1.5rem 0 1.5rem ;
@@ -612,14 +620,55 @@ form{
     body{
      font-size: 8px;
     }
-    .box_description{
+    .brand{
+        font-size: 1.5rem;
+    }
+   
+    #box_h3{
         display: none;
+    }
+    .box_img {
+        margin-left: 0;
+    }
+    .box_description {
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+    .box_description h1{
+        font-size: 1.2em;
+        display: flex;
+        justify-content: center;
+    }
+    .box_description h2 {
+        margin-bottom: 1.6rem;
+        width: 100%;
+        font-size: 0.7em;
+        display: flex;
+        justify-content: center;
+    }
+    .div_buttom {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .box_menu {
+        display: flex;
+       
+        flex-direction: column-reverse;
     }
 
     .img{
         display: none;
     }
-    
+    .text_inicio2 {
+       
+        display: flex;
+        margin-left: 35%;
+       
+        
+    }
     .contacto_form{
        width: 100%;
     }
@@ -628,7 +677,7 @@ form{
         position: fixed;
         top:0;
         right: 0;
-        padding: 0.5em;
+        padding: 12px;
         font-size: 3.5em;
     }
  
@@ -654,7 +703,7 @@ form{
         transform: translateX(0%);
         transition: all .5s ease-in-out;
     }
-   
+  
 
  
 /* 
