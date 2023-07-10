@@ -302,11 +302,62 @@ ANIMACION           */
     } */
 
     
+    .contenedor1  {
+        font-family: 'Poppins', sans-serif;
+      
+        font-size: 1.3em;
+        position: relative;
+        width: 100%;
+        height: 8em;
+        margin-bottom: 1em; 
+    }
 
+    .box_tex {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(110, 33, 47, 0.801);
+        text-align: center;
+     
+        transition: height 0.5s;
+    }
+    
+    .contenedor1:hover .box_tex {
+        height: 200px;
+     
+    }
+    .contenedor1:hover .puntitos{
+        display: none;
+     
+    } 
+    .box_texto{
+        display: none;
+     
+    }
+    
+    .descripcion {
+        display: none;
+        background-color: rgba(110, 33, 47, 0.801);
+
+        padding: 10px;
+        text-align: center;
+        transition: opacity 0.5s;
+    }
+    
+    .contenedor1:hover .box_texto {
+        display: block;
+    }
 .herramientas{
     width: 100%;
     background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(82, 82, 82));
    
+}
+.contenedor{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 3em;
+    font-size: 1.3em;
 }
 .text_inicio{
     
@@ -318,7 +369,7 @@ ANIMACION           */
     margin-left: 1rem;
     margin-top: 0.4rem;
     position: absolute;
-    /* padding: 10px; */
+    padding-top: 25px;
     justify-content: center;
 }
 /* .herramientas h1{
@@ -414,7 +465,7 @@ border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 .container_div h2{
     font-family: 'Poppins', sans-serif;
@@ -479,6 +530,7 @@ border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     color: #F24464 ;
     margin-left:1rem;
+   
  
 }
 .fondo_contac{
