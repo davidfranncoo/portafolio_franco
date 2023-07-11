@@ -11,33 +11,15 @@
     /*  permite especificar el tamaño total del elemento
      de manera más intuitiva y fácil de entender */
     box-sizing: border-box;
-    
-}
-/* 
- {
-        display: grid;
-        grid-template-columns: 1;
-        grid-auto-rows: 100% 100% 100% 100% 100% 5%; 
-        width: 100vw;
-        height: 100vh;
-} */
-
-body{
-    
-    /* display: grid;
-    grid-template-columns: 1;
-    grid-auto-rows: 100% 100% 100% 100% 100% 5%;  */
-    display: block;
    
-   font-family: 'Inter', sans-serif;
+}
+body{
+    display: block;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: white;
 }
-
 /* --------------------------------- MENU ------------------------ */
-
-
-
 .NavBran1 {
     width: 100%;
     height: 100vh;
@@ -47,11 +29,8 @@ body{
     background-size: cover ;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-   
-    
+    justify-content: space-around; 
 }
-
 .brand{
     position: fixed;
     left: 0;
@@ -59,20 +38,12 @@ body{
     padding: 0.5em;
     margin-left: 0.5em;
     z-index: 1;
-    
-
 }
-
 ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-
 }
-/* .inicio_icon{
-    display: none;
-} */
-
 .menu{
     background-color: #8dcbf256;
     display: flex;
@@ -82,23 +53,18 @@ ul {
     top:0;
     right:0;
     width: 100%;
-    
-
 }
-
 .a {
     text-decoration: none;
     padding: 0.8vw;
     color: white;
-    margin: 1.2vw;;
-   
+    margin: 1.2vw;   
 }
 .a:hover{
     background-color: #8DCBF2;
     color:black;
     border-radius: 5px;
-    transform: scale(1.1);
-    
+    transform: scale(1.1);    
 }
 @media screen and (min-width: 769px){
 
@@ -106,7 +72,6 @@ ul {
     display: none;
     }
 } 
-
 .box_menu{
     
     display: flex;
@@ -129,15 +94,11 @@ font-size: 3rem;
     margin-bottom: 1.6rem;
     font-size: 1.3em;
 }
-
 .div_buttom{
     display: flex;
-    justify-content: center;
-    
-    
+    justify-content: center;  
 }
-.box_buttom{
-    
+.box_buttom{  
     width: 6em;
     height: 2.5em;
     color:white;
@@ -145,51 +106,39 @@ font-size: 3rem;
     border: 2.5px solid #8DCBF2;
     border-radius: 5px ;
     margin: 1rem;
-   
-     font-size : 0.7em;
+    font-size : 0.7em;
     transition: background-color 0.3s ease;
-    transition: transform 0.3s ease;
-   
+    transition: transform 0.3s ease;  
 }
 .box_buttom:hover{
     background-color: rgb(140, 203, 242);
     color:rgb(108, 2, 2);
     transform: scale(1.1);
-
 }
-
 .box_icon{
     display: flex;
     justify-content: center;
-    font-size: 1.5em;
-    
-    width: 70%;
-    
+    font-size: 1.5em; 
+    width: 70%; 
 }
 .box_icon i{
     color: white;
     padding: 1rem;
     transition: background-color 0.3s ease;
-    transition: transform 0.3s ease;
-    
+    transition: transform 0.3s ease;   
 }
 .box_icon i:hover{
-    
     background-color: rgb(140, 203, 242);
     color:black;
     border-radius: 10px;
     transform: scale(1.1);
-
 }
-
 .box_img{
     width: 5em;
     height: 7em;
     border: 5px solid rgb(141, 203, 242);
     border-radius: 3%;
     background: linear-gradient(to bottom, rgb(231, 76, 104), rgba(242, 68, 100, 0.181));
-
-    
     margin-left:3rem;
     box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.6);
 }
@@ -198,8 +147,7 @@ font-size: 3rem;
     height: 100%;
     border-radius: 10%;
     /* filter:drop-shadow(10px 8px 6px #ff0055) */
-    
-    
+      
 }
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
    body{
@@ -210,27 +158,16 @@ font-size: 3rem;
    }
    .box_img{
     font-size: 3rem;
-
    }
-  
-   /* ------------------------Proyecto------------- */
- 
-
   }
-  
-
 /* ------------------  SOBRE MI----------------------------- */
 .informacion {
     /* background: linear-gradient(45deg, black, rgb(64,64,64), black); */
     background: linear-gradient(to bottom, rgb(21, 21, 21), rgb(49, 49, 49));
-
     display: flex;
-   
-
   }
   .info {
     width: 100%;
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -243,32 +180,23 @@ font-size: 3rem;
   .article_info2{
     display: flex;
   }
-
    .info2, .info3  {
     display:flex;
     justify-content: center;
     padding: 4em;
     box-sizing: border-box;
-
     text-align: left;
     flex-direction: column;
-   
-   
   }
-/* >>>>>>>>>>>>>>>>>
-ANIMACION           */
 
-  .info1,  .info4  {
+ .info1,  .info4  {
     display: flex;
     width: 100%;
     height: 100%;
-    /* box-sizing: border-box; */
     align-items: center;
     justify-content: center;
     flex-direction: column;
   }
-
-  
   .info1 img{
     object-fit:contain;
     width: 25em;
@@ -278,14 +206,11 @@ ANIMACION           */
     object-fit:contain;
     width: 27em;
     height: 90%;
-
   }
-
   .info2 h1, .info3 h1{
     padding-bottom: 1rem;
     color:#F24464;
     font-size: 2.5em;
- 
   }
   .info3 h3, .info2 h3{
      font-family: 'Inter', sans-serif;
@@ -293,25 +218,15 @@ ANIMACION           */
      font-family: 'Poppins', sans-serif;
   }
 
-
-
 /* -- ---------------------------------- HERRAMIENTAS--------------------------------- -- */
-/* @media (max-width: 1025px){
-    body{
-        font-size: 5px;
-    } */
-
-    
     .contenedor1  {
         font-family: 'Poppins', sans-serif;
-      
         font-size: 1.3em;
         position: relative;
         width: 100%;
         height: 8em;
         margin-bottom: 1em; 
     }
-
     .box_tex {
         position: absolute;
         top: 0;
@@ -320,47 +235,37 @@ ANIMACION           */
         height: 100%;
         background-color: rgba(110, 33, 47, 0.801);
         text-align: center;
-     
         transition: height 0.5s;
     }
-    
     .contenedor1:hover .box_tex {
         height: 16em;
-     
     }
     .contenedor1:hover .puntitos{
         display: none;
-     
     } 
     .box_texto{
         display: none;
-     
     }
-    
     .descripcion {
         display: none;
         background-color: rgba(110, 33, 47, 0.801);
-
         padding: 10px;
         text-align: center;
         transition: opacity 0.5s;
     }
-    
     .contenedor1:hover .box_texto {
         display: block;
     }
 .herramientas{
     width: 100%;
     background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(82, 82, 82));
-   
 }
 .contenedor{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 3em;
     font-size: 1.3em;
 }
-.text_inicio{
-    
+.text_inicio{ 
     width: 95%;
     display: flex;
     align-items: center;
@@ -372,23 +277,15 @@ ANIMACION           */
     padding-top: 25px;
     justify-content: center;
 }
-/* .herramientas h1{
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-} */
 .kit_container p{
     font-size: 1.1em;
     font-family: 'Poppins', sans-serif;
 }
-.kit_container article{
-    
-    
+.kit_container article{   
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1em;
-  
     transition: background-color 0.3s ease;
     transition: transform 0.3s ease;
 
@@ -403,17 +300,6 @@ transform: scale(1.1);
 color:rgb(108, 2, 2);
 border-radius: 10px;
 }
-/* .kit{
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(
-        1em,
-        1fr
-    ));
-    gap: 15px;
-  
-} */
 .kit{
     padding: 15em 5em;
 }
@@ -434,25 +320,19 @@ border-radius: 10px;
     border-radius: 1rem;
     box-shadow: 10px 10px 20px rgb(0, 0, 0);
 }
-
 /* ----------------------------- PROYECTOS-------------------------- */
-
 .proyecto{
-    width: 100%;
-    
-    background: linear-gradient(to bottom,rgb(82, 82, 82), rgb(31,31,31));
-   
+    width: 100%; 
+    background: linear-gradient(to bottom,rgb(82, 82, 82), rgb(31,31,31));  
 }
-.proyecto_container{
-   
+.proyecto_container{  
     display: flex;
     justify-content: space-around;
     padding:  15em 0;
 }
 .proyecto_card img{
     padding: 1.5rem 1.5rem 0 1.5rem ;
-    width: 25em;
-    
+    width: 25em;   
 }
 .proyecto_card{
     box-shadow: 10px 10px 20px rgb(0, 0, 0);
@@ -476,7 +356,6 @@ border-radius: 10px;
     margin-bottom: 3em;
     font-size: 1.3em;
 }
-
 .card_buttom{
     display: flex;
     align-items: center;
@@ -512,12 +391,9 @@ border-radius: 10px;
     justify-content: center;
     height: 80%;
     background: linear-gradient(to bottom, rgb(31,31,31), rgb(87, 87, 87));
-
 }
-
 .contacto_form{
     width: 50%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -525,13 +401,10 @@ border-radius: 10px;
     margin-left: 8%; 
     padding:  10rem  0;
 }
-.text_inicio2{
-    
+.text_inicio2{   
     font-family: 'Poppins', sans-serif;
     color: #F24464 ;
     margin-left:1rem;
-   
- 
 }
 .fondo_contac{
     margin-top: 10%;
@@ -540,30 +413,19 @@ border-radius: 10px;
     background-blend-mode: overlay;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgb(0, 0, 0);
-   
     width: 90%;
     padding: 2rem;
 }
 .main{
-  
-
-
-
-
-
     width: 100%;
     height: 100%;
-    display: flex;
-    
-   
+    display: flex;  
 }
 .img{
     width: 40%;
-
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(141,203,242,0.5)), url("/Img/franco\ img.png ");
     background-size: cover;
 }
-
 .input_name, .input_email{
     margin-top:3rem;
     font-size: 1.3em;
@@ -574,7 +436,6 @@ border-radius: 10px;
     border-radius: 10px;
     padding: 0.5rem;
     width: 100%;
-
 }
 .input_area{
     margin:3rem 0;
@@ -587,9 +448,7 @@ border-radius: 10px;
     width: 100%;
     height: 11rem;
     padding: 0.5rem;
-
 }
-
 .box_buttom2{
     width: 6em;
     height: 2.5em;
@@ -599,7 +458,6 @@ border-radius: 10px;
     border-radius: 5px ;
     margin-top: 0.5em;
     font-size : 1em;
-  
     transition: background-color 0.3s ease;
     transition: transform 0.3s ease;
 }
@@ -608,66 +466,12 @@ border-radius: 10px;
     transform: scale(1.1);
     color:black
 }
-
 .portafolio {
     background-color: rgb(240, 184, 184);
-
 }
-
-
 form{
-    display: flex;
-    
+    display: flex;   
 }
-
-
-
-
-  
-  /* @media (max-width: 1024px) {
-    .info {
-        width: 100%;
-        height: 80%;
-      flex-direction: column;
-      flex-wrap: nowrap;
-        
-    }
-  
-    .info1 {
-      flex-basis: 100%;
-    }
-    .info1 img, .info4 img{
-        display: flex;
-        width: 22rem;
-        height: 22rem;
-      }
-  }
-
-@media (min-width: 1025px){
-    body{
-        font-size: 20px;
-    }
-    .info {
-        width: 90%;
-        height: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 4rem;
-      }
-    .info1 img, .info4 img{
-        display: flex;
-        width: 33rem;
-        height: 33rem;
-      }
-
-} */
-/* <!-- <div class="inicio_icon">
-<i class="fa-solid fa-bars"></i>
-<i class="fa-solid fa-x"></i>
-</div> --> */
-
-
 @media only screen and (max-width: 768px) {
     body{
      font-size: 8px;
@@ -704,22 +508,16 @@ form{
         flex-direction: column-reverse;
         align-items: center;
     }
-
     .box_menu {
-        display: flex;
-       
+        display: flex;  
         flex-direction: column-reverse;
     }
-
     .img{
         display: none;
     }
     .text_inicio2 {
-       
         display: flex;
-        margin-left: 35%;
-       
-        
+        margin-left: 35%;   
     }
     .contacto_form{
        width: 100%;
@@ -760,20 +558,7 @@ form{
     }
     .contenedor1:hover .box_tex {
         height: 10rem;
-     
     }
-  
-
- 
-/* 
-.proyecto_card {
-    box-shadow: 10px 10px 20px rgb(0, 0, 0);
-    border-radius: 1rem;
-    background: linear-gradient(to bottom, rgba(110, 33, 47, 0.801), rgba(242, 68, 100, 0.862));
-    width: 20em;
-    height: 30em;
-} */
-
 }
 
 
